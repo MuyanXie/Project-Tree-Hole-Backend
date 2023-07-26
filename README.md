@@ -8,7 +8,10 @@ Models: contains the database to object mappers
 Routes: Contains the logical Routes
 SocketHandlers: 
 -  Contains the logic that deals with the connection of WebRTC
+-  Contains the signaling server written with Socket.io
 -  Contains the necessary user dispatch, and room attendance features with optimization done with Socket.io
+
+To sum up, the Spring System will serve as a __Discord__ natured clone that is written by hand specifically for TreeHole with SSO, JWT, Socket.io, and WebRTC based real time communication
 
 ## Technical Notice
 Technologies used:
