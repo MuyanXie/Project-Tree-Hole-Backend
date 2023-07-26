@@ -2,9 +2,12 @@
 This is the fortified version of the project tree hole's back end;
 
 ## Code Highlight
-Middleware: The authentication/authorization logic with JWT and TreHole's GCP SSO
+Middleware: The authentication/authorization logic with JWT and TreeHole's GCP SSO
+
 Controllers: provide login and friends invitation logic
+
 Models: contains the database to object mappers
+
 Routes: Contains the logical Routes
 SocketHandlers: 
 -  Contains the logic that deals with the connection of WebRTC
