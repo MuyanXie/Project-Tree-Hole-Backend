@@ -6,8 +6,10 @@ const validator = require("express-joi-validation").createValidator({});
 const auth = require("../middleware/auth");
 
 const loginSchema = Joi.object({
-  password: Joi.string().min(6).max(12).required(),
   mail: Joi.string().email().required(),
+  username: Joi.string().required(),
+  fireid: Joi.string().required(),
+  token: Joi.string().required(),
 });
 
 router.post(

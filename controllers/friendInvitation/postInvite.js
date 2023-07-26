@@ -3,8 +3,9 @@ const FriendInvitation = require("../../models/friendInvitation");
 const friendsUpdates = require("../../socketHandlers/updates/friends");
 
 const postInvite = async (req, res) => {
+  // console.log(req);
   const { targetMailAddress } = req.body;
-
+  // console.log(req.user)
   const { userId, mail } = req.user;
 
   // check if friend that we would like to invite is not user

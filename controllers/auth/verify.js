@@ -38,7 +38,7 @@ const verify = async (token) => {
         const jwt = token.match(
             /(?<header>[^.]+)\.(?<payload>[^.]+)\.(?<signature>[^.]+)/
         ).groups;
-        const decodedToken = jsonwebtoken.verify(token, keys[JSON.parse(atob(jwt.header)).kid]);
+        const decodedToken = await jsonwebtoken.verify(token, keys[JSON.parse(atob(jwt.header)).kid]);
         return decodedToken;
     } catch (err) {
         return new Error(err);
